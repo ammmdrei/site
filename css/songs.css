@@ -1,0 +1,12 @@
+
+.videos {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.videos iframe {
+  margin: 5px;
+}

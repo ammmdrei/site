@@ -1,0 +1,142 @@
+
+body {
+  background: linear-gradient(180deg, var(--secondary-color) 10%, var(--third-color) 150%);
+}
+
+.app {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url("../content/img/background/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  background-position-y: 0px;
+
+  image-rendering: pixelated;
+}
+
+.display {
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#frame {
+  border: 1px dotted var(--primary-color);
+  background: var(--background-color);
+}
+
+.menu {
+  width: 100px;
+  height: 401px;
+  text-align: left;
+}
+
+.title p {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  border: 1px dotted var(--primary-color);
+  border-bottom: none;
+  border-right: none;
+  background: var(--background-color);
+  
+  border-top-left-radius: 5px;
+}
+
+.link-list {
+  display: flex;
+  flex-direction: column;
+
+  font-size: 16px;
+  border: 1px dotted var(--primary-color);
+  border-right: none;
+
+  padding: 5px;
+  background: var(--background-color);
+  
+  border-bottom-left-radius: 5px;
+}
+
+.link {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+
+  justify-content: space-around;
+
+  transition: .5s ease;
+
+  font-size: 14px;
+}
+
+.link:hover {
+  background-color: #00000015;
+}
+
+
+.img1 {
+  position: absolute;
+
+  width: 600px;
+  height: 100px;
+
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+
+  top: 5%;
+
+  z-index: 2023;
+
+  background-image: url("../content/img/background/cover1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  image-rendering: pixelated;
+  background-position-y: 50%;
+}
+
+
+#book {
+  position: absolute;
+  
+  top: 0;
+  bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+    
+  right: 25px;
+
+  width: 116px;
+  height: 92px;
+  cursor: pointer;
+  image-rendering: pixelated;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  background-image: url("/content/img/background/book.png");
+}
+
+#book:hover {
+  background-image: url("/content/img/background/bookstar.gif");
+}
+
+.nyan-cat img {
+  width: 250px;
+  position: absolute;
+  image-rendering: pixelated;
+}
+
+@media screen and (max-width: 1200px){
+  .app {
+    background-position-y: 0px;
+  }
+  
+}

@@ -1,0 +1,44 @@
+
+#game-list {
+  width: 500px;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  --border-color: var(--primary-color);
+}
+
+.game-box {
+  width: fit-content;
+  text-decoration: none;
+
+  margin: 10px;
+  padding: 10px;
+  
+  border-radius: 5px;
+
+  border: 1px solid var(--border-color);
+  border-bottom: 5px solid var(--border-color);
+  border-left: 5px solid var(--border-color);
+
+  background-color: transparent;
+}
+
+.game-img img {
+  width: 120px;
+
+  border-radius: 5px;
+}
+
+.game-info {
+  border-top: 1px solid var(--border-color);
+}
+
+.game-info p {
+  margin: 0;
+  margin-top: 5px;
+
+  color: var(--primary-color);
+}

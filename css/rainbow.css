@@ -1,0 +1,41 @@
+
+* {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin: 0;
+  background-color: black;
+  color: white;
+
+  --page-size: 1000px;
+}
+
+.page {
+  text-align: center;
+  width: var(--page-size);
+  margin: 0 auto;
+  
+}
+
+
+.r1 {
+  width:7px;
+  height: 800px;
+  background-image: url("../content/img/rainbow.png");
+  position: fixed;
+  image-rendering: pixelated;
+  left: 0;
+}
+
+.r2 {
+  width:7px;
+  height: 800px;
+  background-image: url("../content/img/rainbow.png");
+  position: fixed;
+  image-rendering: pixelated;
+  right: 0; 
+}
+
+
+.title {
+  font-size: 48px;
+
+}

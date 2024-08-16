@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    .con {
+      display: flex;
+      flex-direction: column;
+    }
+
+    #t {
+      display: flex;
+      flex-direction: column-reverse;
+      padding: 10px 30px;
+    }
+  </style>
+  <title>Diary</title>
+</head>
+<body>
+  <div id="t"></div>
+
+  <script type="text/javascript">
+    const t = document.getElementById("t");
+    function its(data, text) {
+      var div = document.createElement("div");
+      div.classList = "con";
+      var h2 = document.createElement("h2");
+      h2.innerHTML = data;
+      var p = document.createElement("p");
+      p.innerHTML = text;
+      var br = document.createElement("br");
+      
+      div.append(h2, p, br);
+      t.append(div);
+    }
+
+    its("04/09/2023", "i think i made the wrong choices yesterday");
+  </script>
+</body>
+</html>

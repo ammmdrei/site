@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=Poppins:wght@100;200;300&display=swap');
+
+* {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin: 0;
+
+  --background-color: #000000;
+  --title-text-color: #ffffff;
+  --subtext-color: #e0e0e0;
+  --link-color: rgb(100, 100, 255);
+  --dotted-color: #ff008c;
+}
+
+h1, h2, h3 {
+  color: var(--title-text-color);
+  font-weight: normal;
+}
+
+p {
+  color: var(--subtext-color);
+}
+
+a {
+  transition: all 50ms ease-in-out;
+  color: var(--link-color);
+}
+

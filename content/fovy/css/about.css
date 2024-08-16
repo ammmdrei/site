@@ -1,0 +1,195 @@
+
+
+.sep {
+  border-bottom: 1px dotted var(--primary-color);
+}
+
+.profile-box {
+}
+
+.profile {
+  display: flex;
+  justify-content: center;
+  align-items: top;
+  padding: 10px 0;
+}
+
+.pic img {
+  border-radius: 10%;
+  --pic-size: 125px;
+  width: var(--pic-size);
+  height: var(--pic-size);
+
+  image-rendering: pixelated;
+}
+
+.info li {
+  font-size: 16px;
+  margin: 0 25px;
+  list-style: circle;
+  padding-top: 5px;
+}
+
+.title {
+  width: fit-content;
+  margin: 0 auto;
+  padding: 0 10px;
+
+  text-align: center;
+  border: 1px dotted var(--primary-color);
+  border-top: none;
+}
+
+.title p {
+  font-size: 10px;
+  margin: 0;
+  padding: 0;
+
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+.socials {
+  width: 80%;
+  margin: 0 auto;
+  
+  padding: 10px 0;
+
+
+  display: flex;
+  justify-content: center;
+}
+
+.socials a {
+  margin: 0 5px;
+}
+
+.socials img {
+  border-radius: 5px;
+  transition: .5s ease;
+}
+
+
+.badge-list {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  
+  width: 80%;
+  margin: 0 auto;
+  
+}
+
+.bgd {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+
+  background-color: #00000010;
+  border-radius: 15px;
+  padding: 5px;
+
+  margin: 10px;
+
+  width: 200px;
+}
+
+.bgd img {
+  width: 35px;
+  image-rendering: pixelated;
+}
+
+.bgd p {
+  font-size: 12px;
+}
+
+
+
+.language-learning {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  
+}
+
+.language-learning-logs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  width: 300px;
+  margin: 25px auto;
+}
+
+
+.lang {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  padding: 10px 15px;
+
+  background-color: #00000010;
+  border-radius: 10px;
+
+  margin: 5px 10px;
+}
+
+.lang p {
+  margin: 0;
+  padding-top: 10px;
+  font-size: 14px;
+}
+
+.lang img {
+  width: inherit;
+  height: inherit;
+
+  border-radius: 10%;
+}
+
+.flag {
+  width: 50px;
+  height: 35px;
+  text-align: center;
+}
+
+
+
+.pnt1 {
+  position: absolute;
+  
+  width: 400px;
+
+  top: 11%;
+  left: 0;
+  right: 0;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  image-rendering: pixelated;
+}
+
+
+
+#ducky {
+  position: absolute;
+  right: 0;
+  left: 0;
+
+  top: 80px;
+}
+
+#ducky-img {
+  width: 100px;
+  image-rendering: pixelated;
+}
+

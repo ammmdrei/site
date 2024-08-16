@@ -1,0 +1,16 @@
+
+#art {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: reverse-row;
+  align-items: center;
+  justify-content: center;
+}
+
+.art {
+  margin: 25px;
+}
+
+.image img {
+  width: 300px;
+}

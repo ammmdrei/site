@@ -1,0 +1,44 @@
+
+* {
+  background-color: #181818;
+  color: white;
+
+  font-family: 'arial';
+  font-weight: lighter;
+}
+
+h1 {
+  margin: 0; padding: 0;
+}
+
+.logo {
+  font-size: 62px;
+}
+
+.download {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+
+  border: 1px solid #505050;
+  border-radius: 5px;
+
+  width: fit-content;
+
+  padding: 0 20px;
+}
+
+.download p {
+  width: 300px;
+}
+
+.download button {
+  margin-left: 50px;
+  font-size: 15px;
+  background-color: green;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+

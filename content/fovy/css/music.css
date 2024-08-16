@@ -1,0 +1,146 @@
+
+.header {
+  width: 60%;
+  margin: 10px auto;
+
+  text-align: left;
+
+  --disclaimer-border-radius: 5px;
+}
+
+.header p {
+  margin: 0;
+}
+
+.top-text {
+  text-decoration: underline;
+  padding-left: 5px;
+
+  border: 1px solid var(--primary-color);
+  border-left: var(--border-box-size) solid var(--primary-color);
+  border-bottom: none;
+
+  border-top-left-radius: var(--disclaimer-border-radius);
+}
+
+.info {
+  padding: 5px;
+  border: 1px solid var(--primary-color);
+  border-left: var(--border-box-size) solid var(--primary-color);
+  border-bottom: var(--border-box-size) solid var(--primary-color);
+
+  border-bottom-left-radius: var(--disclaimer-border-radius);
+  border-bottom-right-radius: var(--disclaimer-border-radius);
+}
+
+.sd-ad-link {
+  text-decoration: none;
+}
+
+.sd-ad {
+  margin: 25px auto;
+  width: 435px;
+  text-align: center;
+  padding: 25px;
+  border: 1px solid var(--primary-color);
+  border-bottom: 4px solid var(--primary-color);
+  border-left: 4px solid var(--primary-color);
+  
+  border-bottom-left-radius: 12px;
+  border-top-right-radius: 25px;
+
+  transition: .5s ease;
+}
+
+.sd-ad:hover {
+  padding: 30px 25px;
+}
+
+#display-string {
+  color: var(--primary-color);
+}
+
+
+/* Music Box */
+.music-box {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.album-info {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+
+  padding: 10px 20px;
+  border-bottom: 1px dotted var(--primary-color);
+}
+
+.album-img {
+  width: 80px;
+  border-radius: 5px;
+}
+
+.album-title {
+  margin-left: 15px;
+}
+
+
+.song-box {
+  display: flex;
+  flex-direction: column;
+
+  margin-left: 40px;
+  padding-left: 10px;
+
+  border-left: 1px dotted var(--primary-color);
+  border-bottom: 1px dotted var(--primary-color);
+}
+
+.song-description {
+  width: 80%;
+}
+
+.song-controller audio {
+  width: 60%;
+  height: 30px;
+
+  margin-bottom: 5px;
+}
+
+
+
+.canvas {
+  display: flex;
+  justify-content: center;
+
+  margin: 25px 0;
+  padding-bottom: 25px;
+}
+
+#background-canvas {
+  margin-top: 100px;
+  border: 1px dotted var(--primary-color);
+  border-radius: 15px;
+}
+
+.warning {
+  color: white;
+  background-color: #ff4a4a;
+
+  font-size: 8px;
+  text-transform: uppercase;
+  font-weight: light;
+
+  padding: 5px 10px;
+  border-radius: 5px;
+
+  width: fit-content;
+
+  right: 0;
+  margin-left: auto;
+  margin-right: 65px;
+
+  position: absolute;
+}

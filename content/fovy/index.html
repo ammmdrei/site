@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/index.css">
+
+  <title>fovy's oasis</title>
+</head>
+<body>
+  <div class="nyan-cat">
+    <img src="https://www.icegif.com/wp-content/uploads/2022/12/icegif-286.gif" alt="nyan">
+  </div>
+
+  <div class="app">
+    <!--MAYBE PUT SOME ANIMATIONS WITH CANVAS HERE-->
+
+    <main class="menu">
+      <div class="">
+        <div class="title">
+          <p>⍣☆content☆⍣</p>
+        </div>
+        <div class="link-list">
+          <a class="link" onclick="switchPage('./html/home.html')">
+            home
+            <img src="./content/img/icons/home.png">
+          </a>
+          <a class="link" onclick="switchPage('./html/music.html')">
+            music
+            <img src="./content/img/icons/musics.png">
+          </a>
+          <a class="link" onclick="switchPage('./html/about.html')">
+            about
+            <img src="./content/img/icons/about.png">
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <div class="display">
+      <iframe id="frame" src="./html/home.html" width="650" height="399"></iframe>
+    </div>
+  
+  </div>
+
+  <a id="book" onclick="switchPage('./html/diary.html')"></a>
+
+  <script src="./js/index.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>

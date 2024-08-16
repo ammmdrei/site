@@ -1,0 +1,55 @@
+function noise1D(x, range){
+	var chunk_index = x div CHUNK_SIZE;
+	var prog = (x % CHUNK_SIZE) / CHUNK_SIZE;
+
+	var left_random		= random_seed(chunk_index, range);
+	var right_random	= random_seed(chunk_index + 1, range);
+
+	var n = (1-prog) * left_random + prog * right_random;
+
+	return n;
+}
+
+function noise2D(x, y, range) {
+	
+	var chunk_size = CHUNK_SIZE;
+	var n = 0;
+	range = range div 2;
+	
+	while (chunk_size > 0) {
+	
+		var chunk_index_x = x div chunk_size;
+		var chunk_index_y = y div chunk_size;
+	
+		var t_x = (x % chunk_size) / chunk_size;
+		var t_y = (y % chunk_size) / chunk_size;
+
+		var r_00		= random_seed_2D(chunk_index_x, chunk_index_y, range);
+		var r_10		= random_seed_2D(chunk_index_x+1, chunk_index_y, range);
+		var r_01		= random_seed_2D(chunk_index_x, chunk_index_y+1, range);
+		var r_11		= random_seed_2D(chunk_index_x+1, chunk_index_y+1, range);
+
+		var r_0 = lerp(r_00, r_01, t_y);
+		var r_1 = lerp(r_10, r_11, t_y);
+
+		n += lerp(r_0, r_1, t_x);
+		
+		chunk_size = chunk_size div 2;
+		range = range div 2;
+		range = max(1, range);
+	
+	}
+	return n;
+	
+}
+
+function random_seed_2D(x, y, range) {
+	var num = x + y * global.randomness;
+	var seed = global.seed + num;
+	
+	
+	random_set_seed(seed);
+	rand = irandom_range(0, range);
+	
+	return rand;
+}
