@@ -387,43 +387,6 @@ button:hover {
   align-items: center;
 }
 
-.profile-info {
-  display:flex;
-  flex-direction:row;
-  text-align:center;
-  align-items:center;
-  justify-content:space-around;
-
-  margin: 10px 0;
-  
-}
-
-.profile-info img {
-  border-radius: 10px;
-}
-
-.roberta {
-  width: 150px;
-  position: relative;
-  top: -120px;
-  left: 120px;
-}
-
-.roberta img {
-  height: 150px;
-}
-
-.profile {
-  font-family: Arial, Helvetica, sans-serif;
-
-  width: 80%;
-  height: 500px;
-  background: rgb(175,6,79);
-  background: linear-gradient(0deg, rgb(202, 130, 5) -50%, rgb(38, 31, 139) 100%);
-
-  border-radius: 5px;
-}
-
 .idk {
   position: relative;
   bottom: 140px;
